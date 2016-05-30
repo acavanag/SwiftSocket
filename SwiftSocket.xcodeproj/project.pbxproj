@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		86023EFE1CFCAC3D00DB78D8 /* SwiftSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 86023EFD1CFCAC3D00DB78D8 /* SwiftSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86023F061CFCAC4D00DB78D8 /* SocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86023F051CFCAC4D00DB78D8 /* SocketManager.swift */; };
+		86023F081CFCAC6E00DB78D8 /* Payload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86023F071CFCAC6E00DB78D8 /* Payload.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		86023EFA1CFCAC3D00DB78D8 /* SwiftSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		86023EFD1CFCAC3D00DB78D8 /* SwiftSocket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftSocket.h; sourceTree = "<group>"; };
 		86023EFF1CFCAC3D00DB78D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86023F051CFCAC4D00DB78D8 /* SocketManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketManager.swift; sourceTree = "<group>"; };
+		86023F071CFCAC6E00DB78D8 /* Payload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Payload.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +50,8 @@
 		86023EFC1CFCAC3D00DB78D8 /* SwiftSocket */ = {
 			isa = PBXGroup;
 			children = (
+				86023F071CFCAC6E00DB78D8 /* Payload.swift */,
+				86023F051CFCAC4D00DB78D8 /* SocketManager.swift */,
 				86023EFD1CFCAC3D00DB78D8 /* SwiftSocket.h */,
 				86023EFF1CFCAC3D00DB78D8 /* Info.plist */,
 			);
@@ -130,6 +136,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86023F061CFCAC4D00DB78D8 /* SocketManager.swift in Sources */,
+				86023F081CFCAC6E00DB78D8 /* Payload.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +238,7 @@
 		86023F031CFCAC3D00DB78D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -240,12 +249,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.andrewjmc.SwiftSocket;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		86023F041CFCAC3D00DB78D8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
