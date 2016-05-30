@@ -1,6 +1,6 @@
 //
-//  FrameBuffer.swift
-//  CarBrain
+//  Payload.swift
+//  SwiftSocket
 //
 //  Created by Andrew Cavanagh on 5/29/16.
 //  Copyright © 2016 Andrew Cavanagh. All rights reserved.

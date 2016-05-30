@@ -1,6 +1,6 @@
 //
 //  SocketManager.swift
-//  LPAC
+//  SwiftSocket
 //
 //  Created by Andrew Cavanagh on 4/5/16.
 //  Copyright © 2016 Andrew Cavanagh. All rights reserved.
