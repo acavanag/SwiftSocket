@@ -51,6 +51,6 @@ class Payload: PayloadType {
 #### Discussion
 
 This implemention is performant, but simple.  A single UInt32 is used as a header for each payload to be transmitted or recieved
-and indicates the byte-length of the `PayloadType` to be written or read.  This head is transmitted on every write and expected 
+and indicates the byte-length of the `PayloadType` to be written or read.  This header is transmitted on every write and is  expected 
 to be present for every read.
 
