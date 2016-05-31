@@ -10,7 +10,38 @@
 		86023EFE1CFCAC3D00DB78D8 /* SwiftSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 86023EFD1CFCAC3D00DB78D8 /* SwiftSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		86023F061CFCAC4D00DB78D8 /* SocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86023F051CFCAC4D00DB78D8 /* SocketManager.swift */; };
 		86023F081CFCAC6E00DB78D8 /* Payload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86023F071CFCAC6E00DB78D8 /* Payload.swift */; };
+		86023F101CFD041700DB78D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86023F0F1CFD041700DB78D8 /* AppDelegate.swift */; };
+		86023F121CFD041700DB78D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86023F111CFD041700DB78D8 /* ViewController.swift */; };
+		86023F151CFD041700DB78D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86023F131CFD041700DB78D8 /* Main.storyboard */; };
+		86023F171CFD041700DB78D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86023F161CFD041700DB78D8 /* Assets.xcassets */; };
+		86023F1A1CFD041700DB78D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86023F181CFD041700DB78D8 /* LaunchScreen.storyboard */; };
+		86023F1F1CFD043500DB78D8 /* SwiftSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86023EFA1CFCAC3D00DB78D8 /* SwiftSocket.framework */; };
+		86023F201CFD043500DB78D8 /* SwiftSocket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 86023EFA1CFCAC3D00DB78D8 /* SwiftSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		86023F211CFD043500DB78D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 86023EF11CFCAC3D00DB78D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 86023EF91CFCAC3D00DB78D8;
+			remoteInfo = SwiftSocket;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		86023F231CFD043500DB78D8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				86023F201CFD043500DB78D8 /* SwiftSocket.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		86023EFA1CFCAC3D00DB78D8 /* SwiftSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -18,6 +49,13 @@
 		86023EFF1CFCAC3D00DB78D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86023F051CFCAC4D00DB78D8 /* SocketManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketManager.swift; sourceTree = "<group>"; };
 		86023F071CFCAC6E00DB78D8 /* Payload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Payload.swift; sourceTree = "<group>"; };
+		86023F0D1CFD041700DB78D8 /* SwiftSocketExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSocketExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		86023F0F1CFD041700DB78D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		86023F111CFD041700DB78D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		86023F141CFD041700DB78D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		86023F161CFD041700DB78D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		86023F191CFD041700DB78D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		86023F1B1CFD041700DB78D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +66,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		86023F0A1CFD041700DB78D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86023F1F1CFD043500DB78D8 /* SwiftSocket.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -35,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				86023EFC1CFCAC3D00DB78D8 /* SwiftSocket */,
+				86023F0E1CFD041700DB78D8 /* SwiftSocketExample */,
 				86023EFB1CFCAC3D00DB78D8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				86023EFA1CFCAC3D00DB78D8 /* SwiftSocket.framework */,
+				86023F0D1CFD041700DB78D8 /* SwiftSocketExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,6 +104,19 @@
 				86023EFF1CFCAC3D00DB78D8 /* Info.plist */,
 			);
 			path = SwiftSocket;
+			sourceTree = "<group>";
+		};
+		86023F0E1CFD041700DB78D8 /* SwiftSocketExample */ = {
+			isa = PBXGroup;
+			children = (
+				86023F0F1CFD041700DB78D8 /* AppDelegate.swift */,
+				86023F111CFD041700DB78D8 /* ViewController.swift */,
+				86023F131CFD041700DB78D8 /* Main.storyboard */,
+				86023F161CFD041700DB78D8 /* Assets.xcassets */,
+				86023F181CFD041700DB78D8 /* LaunchScreen.storyboard */,
+				86023F1B1CFD041700DB78D8 /* Info.plist */,
+			);
+			path = SwiftSocketExample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,16 +151,39 @@
 			productReference = 86023EFA1CFCAC3D00DB78D8 /* SwiftSocket.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		86023F0C1CFD041700DB78D8 /* SwiftSocketExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86023F1C1CFD041700DB78D8 /* Build configuration list for PBXNativeTarget "SwiftSocketExample" */;
+			buildPhases = (
+				86023F091CFD041700DB78D8 /* Sources */,
+				86023F0A1CFD041700DB78D8 /* Frameworks */,
+				86023F0B1CFD041700DB78D8 /* Resources */,
+				86023F231CFD043500DB78D8 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				86023F221CFD043500DB78D8 /* PBXTargetDependency */,
+			);
+			name = SwiftSocketExample;
+			productName = SwiftSocketExample;
+			productReference = 86023F0D1CFD041700DB78D8 /* SwiftSocketExample.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		86023EF11CFCAC3D00DB78D8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Andrew Cavanagh";
 				TargetAttributes = {
 					86023EF91CFCAC3D00DB78D8 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					86023F0C1CFD041700DB78D8 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
@@ -110,6 +194,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 86023EF01CFCAC3D00DB78D8;
 			productRefGroup = 86023EFB1CFCAC3D00DB78D8 /* Products */;
@@ -117,6 +202,7 @@
 			projectRoot = "";
 			targets = (
 				86023EF91CFCAC3D00DB78D8 /* SwiftSocket */,
+				86023F0C1CFD041700DB78D8 /* SwiftSocketExample */,
 			);
 		};
 /* End PBXProject section */
@@ -126,6 +212,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86023F0B1CFD041700DB78D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86023F1A1CFD041700DB78D8 /* LaunchScreen.storyboard in Resources */,
+				86023F171CFD041700DB78D8 /* Assets.xcassets in Resources */,
+				86023F151CFD041700DB78D8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,7 +237,43 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		86023F091CFD041700DB78D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86023F121CFD041700DB78D8 /* ViewController.swift in Sources */,
+				86023F101CFD041700DB78D8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		86023F221CFD043500DB78D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 86023EF91CFCAC3D00DB78D8 /* SwiftSocket */;
+			targetProxy = 86023F211CFD043500DB78D8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		86023F131CFD041700DB78D8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86023F141CFD041700DB78D8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		86023F181CFD041700DB78D8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86023F191CFD041700DB78D8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		86023F001CFCAC3D00DB78D8 /* Debug */ = {
@@ -271,6 +403,30 @@
 			};
 			name = Release;
 		};
+		86023F1D1CFD041700DB78D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = SwiftSocketExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrewjmc.SwiftSocketExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		86023F1E1CFD041700DB78D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = SwiftSocketExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrewjmc.SwiftSocketExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -288,6 +444,14 @@
 			buildConfigurations = (
 				86023F031CFCAC3D00DB78D8 /* Debug */,
 				86023F041CFCAC3D00DB78D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		86023F1C1CFD041700DB78D8 /* Build configuration list for PBXNativeTarget "SwiftSocketExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86023F1D1CFD041700DB78D8 /* Debug */,
+				86023F1E1CFD041700DB78D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

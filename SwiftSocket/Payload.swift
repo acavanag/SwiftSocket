@@ -19,5 +19,5 @@ public final class Payload: PayloadType {
         self.data = data
     }
     
-    public static var headerType: UInt32.Type { return UInt32.self }
+    public static var headerSize: Int { return strideof(UInt32) }
 }

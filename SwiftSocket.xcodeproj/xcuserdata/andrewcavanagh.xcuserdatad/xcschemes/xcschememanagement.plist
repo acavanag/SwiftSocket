@@ -9,10 +9,20 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>SwiftSocketExample.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>86023EF91CFCAC3D00DB78D8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>86023F0C1CFD041700DB78D8</key>
 		<dict>
 			<key>primary</key>
 			<true/>

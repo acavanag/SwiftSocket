@@ -124,9 +124,8 @@ public final class SocketManager<T: PayloadType> {
     }
     
     private func payloadSize() -> UInt32 {
-        let length = strideof(T.HeaderType.self)
-        var buffer = [UInt8](count: length, repeatedValue: 0)
-        delegate.inputStream.read(&buffer, maxLength: strideof(UInt8) * length)
+        var buffer = [UInt8](count: T.headerSize, repeatedValue: 0)
+        delegate.inputStream.read(&buffer, maxLength: strideof(UInt8) * T.headerSize)
         return CFSwapInt32BigToHost(fromByteArray(buffer, UInt32.self))
     }
     
@@ -158,10 +157,11 @@ public final class SocketManager<T: PayloadType> {
 // MARK: - Public Interface
 
 public extension SocketManager {
-    public func write(payload: [UInt8]) {
-        var header = UInt32(payload.count).bigEndian
+    public func write(payload: T) {
+        let bytes = payload.networkBytes()
+        var header = UInt32(bytes.count).bigEndian
         var headerBytes = toByteArray(&header)
-        headerBytes.appendContentsOf(payload)
+        headerBytes.appendContentsOf(bytes)
         delegate.outputStream.write(headerBytes, maxLength: strideof(UInt8) * headerBytes.count)
     }
 
@@ -200,10 +200,7 @@ private func fromByteArray<T>(value: [UInt8], _: T.Type) -> T {
 }
 
 public protocol PayloadType {
-    associatedtype HeaderType
-    static var headerType: HeaderType { get }
-    
-    var data: NSData { get }
+    static var headerSize: Int { get }
     init(data: NSData)
     func networkBytes() -> [UInt8]
 }
